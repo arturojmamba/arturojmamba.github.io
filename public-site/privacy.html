@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Personal Life Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p><a href="index.html">← Personal Life Dashboard</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: 14 November 2026</p>
+
+    <p>Personal Life Dashboard ("the app") is a personal macOS desktop application used only by its developer. This policy describes how the app handles data, including data received from Google APIs.</p>
+
+    <h2>Data the app accesses</h2>
+    <ul>
+      <li><strong>Gmail (read-only, optional).</strong> With the owner's consent, via the <code>gmail.readonly</code> scope: message metadata (sender, subject, date, labels), short snippets and, on demand, message bodies. The app cannot send, delete or modify email.</li>
+      <li><strong>Apple Calendar and Reminders</strong> on the Mac, through macOS's permission system.</li>
+      <li><strong>Data the owner enters</strong> (goals, tasks, habits, journal entries).</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <ul>
+      <li>Gmail data is used only to show the owner their own email information and to suggest calendar events, reminders and "reply needed" items. Every suggestion requires the owner's explicit approval before anything is created.</li>
+      <li>Financial details in emails (amounts, balances, transactions) are not extracted or stored.</li>
+    </ul>
+
+    <h2>Storage and security</h2>
+    <ul>
+      <li>All data is stored <strong>locally on the owner's Mac</strong> in an encrypted database. There is no app server or cloud database.</li>
+      <li>Google sign-in credentials are encrypted with a key held in the macOS Keychain. Access tokens are kept in memory only.</li>
+      <li>Email metadata and snippets are kept for a limited window (60 days by default) and then deleted. Email bodies are fetched when needed and not stored.</li>
+    </ul>
+
+    <h2>Sharing and AI processing</h2>
+    <ul>
+      <li>Data is never sold, used for advertising, or shared with anyone.</li>
+      <li>Only if the owner enables AI features for email, the minimum necessary email content is sent to the Anthropic Claude API to summarise it or extract suggested events and reminders. Each data source can be switched off at any time. This transfer is solely to provide these user-facing features.</li>
+      <li>No human reads Gmail data other than the owner.</li>
+    </ul>
+
+    <h2>Google API Services User Data Policy</h2>
+    <p>Personal Life Dashboard's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Removing access and deleting data</h2>
+    <ul>
+      <li>Disconnecting Gmail in the app revokes the app's access with Google and deletes all locally stored Gmail data.</li>
+      <li>Access can also be removed at any time from <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: contact the developer at the support email shown on the Google sign-in consent screen.</p>
+  </main>
+</body>
+</html>
